@@ -9,7 +9,7 @@
     <div class="card mb-3">
       <%= image_tag ("/assets/map_hackethon.gif"), class: "card-img-top"%>
       <div class="card-body">
-        <h5 class="card-title"><strong><%= soil.pick_up_adress %><strong></h5>
+        <h5 class="card-title">Pick Up At<br><strong><%= soil.pick_up_adress %><strong></h5>
         <p class="card-text"><button><%= link_to 'Buy', soil %></button></p>
         <p class="card-text"><small class="text-muted">
           <td><strong>Quote: $<%= soil.quote %></strong></td><br>
