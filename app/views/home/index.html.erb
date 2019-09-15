@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <br><br>
-<h1>Eco Friendly Prices for Dirt and Soil</h1><br></br>
+<h1 align="center">Eco Friendly Prices for Dirt and Soil</h1><br></br>
 
 
     <% @soils.each do |soil| %>
+<div align="center">
     <div class="card mb-3">
       <%= image_tag ("/assets/map_hackethon.gif"), class: "card-img-top"%>
       <div class="card-body">
@@ -17,6 +18,7 @@
         </small></p><br><br>
       </div>
     </div>
+</div>
     <% end %>
 
 
