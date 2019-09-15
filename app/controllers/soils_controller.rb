@@ -29,7 +29,7 @@ class SoilsController < ApplicationController
 
     respond_to do |format|
       if @soil.save
-        format.html { redirect_to action: "index", notice: 'Soil was successfully created.' }
+        format.html { redirect_to action: "index", notice: 'Quote was successfully created.' }
         format.json { render :show, status: :created, location: @soil }
       else
         format.html { render :new }
