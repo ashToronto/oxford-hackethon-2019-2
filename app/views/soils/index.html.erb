@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Soils selling list</h1>
+<h1>Soils</h1>
 
 <table>
   <thead>
@@ -22,8 +22,9 @@
         <td><%= soil.weight %></td>
         <td><%= soil.pick_up_adress %></td>
         <td><%= soil.soil_type %></td>
-        <td><%= soil.user_id %></td>
-        <td><%= link_to 'Buy', soil %></td>
+        <td><%= link_to 'Show', soil %></td>
+        <td><%= link_to 'Edit', edit_soil_path(soil) %></td>
+        <td><%= link_to 'Destroy', soil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

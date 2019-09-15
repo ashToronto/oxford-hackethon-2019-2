@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  quote: 9.99
+  weight: 9.99
+  pick_up_adress: MyString
+  soil_type: MyString
+
+two:
+  company: MyString
+  quote: 9.99
+  weight: 9.99
+  pick_up_adress: MyString
+  soil_type: MyString

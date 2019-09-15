@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @soil.company %>
+</p>
+
+<p>
+  <strong>Quote:</strong>
+  <%= @soil.quote %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @soil.weight %>
+</p>
+
+<p>
+  <strong>Pick up adress:</strong>
+  <%= @soil.pick_up_adress %>
+</p>
+
+<p>
+  <strong>Soil type:</strong>
+  <%= @soil.soil_type %>
+</p>
+
+<%= link_to 'Edit', edit_soil_path(@soil) %> |
+<%= link_to 'Back', soils_path %>
