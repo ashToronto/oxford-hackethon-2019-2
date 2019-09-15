@@ -1,5 +1,6 @@
 class SoilsController < ApplicationController
   before_action :set_soil, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show]
 
   # GET /soils
   # GET /soils.json
