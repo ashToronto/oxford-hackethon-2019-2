@@ -4,7 +4,7 @@ class SoilsController < ApplicationController
   # GET /soils
   # GET /soils.json
   def index
-    @soils = Soil.all
+    @soils = Soil.where(:user_id => current_user.id)
   end
 
   # GET /soils/1
@@ -28,7 +28,7 @@ class SoilsController < ApplicationController
 
     respond_to do |format|
       if @soil.save
-        format.html { redirect_to @soil, notice: 'Soil was successfully created.' }
+        format.html { redirect_to action: "index", notice: 'Soil was successfully created.' }
         format.json { render :show, status: :created, location: @soil }
       else
         format.html { render :new }
