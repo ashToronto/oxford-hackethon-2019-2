@@ -8,23 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">uCrypt</a>
+      <a class="navbar-brand" href="#">Dirt Cruncher</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to 'Crypto', root_path %></li>
-        <li><%= link_to 'News', home_news_path %></li>
-        <li><%= link_to 'Search', home_lookup_path %></li>
+        <li><%= link_to 'Get Quotes', root_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'About', home_about_path %></li>
-
         <% if user_signed_in? %>
           <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
             <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-            <li><%= current_user.email %></li>
+            <li><%= link_to current_user.email %></li>
         <% else %>
           <li><%= link_to 'Sign up', new_user_registration_path %></li>
           <li><%= link_to 'Login', new_user_session_path %></li>
