@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :soils
   devise_for :users
+  resources :soils
+  resources :charges
   root to: 'home#index'
 end
